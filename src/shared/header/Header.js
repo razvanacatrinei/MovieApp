@@ -1,9 +1,10 @@
+/* eslint-disable jsx-a11y/accessible-emoji */
 import React from 'react';
 import {AppBar, Toolbar,IconButton, Typography, Button  } from '@material-ui/core'
 
 import MenuIcon from '@material-ui/icons/Menu';
 
-const Header  = () => {
+const Header  = (props) => {
     return (
     <AppBar position="static">
         <Toolbar>
@@ -13,10 +14,13 @@ const Header  = () => {
                 aria-label="menu">
                 <MenuIcon />
             </IconButton>
-            <Typography variant="h6">
-               🍿 Movie List 📺
+            <Typography
+            style = {{flexGrow : 1,}}
+             variant="h6">
+               <span role="img" aria-label="popcorn">🍿</span> Movie List <span role="img" aria-label="television">📺</span>
             </Typography>
-            <Button color="inherit">Login</Button>
+            {props.user && <span>{props.user.userName}</span>}
+            {props.user && <Button onClick={props.onLogout} color="inherit">Logout</Button>}            
         </Toolbar>
     </AppBar>
     )}
