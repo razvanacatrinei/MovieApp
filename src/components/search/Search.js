@@ -10,12 +10,18 @@ import Settings from '../../config/Settings.js';
 import styles from './Search.module.css';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 class Search extends Component{
 =======
+=======
+>>>>>>> 93d568eb09bd0f5cb15041fc1284aba5e17bf909
 
 
 class Search extends Component{
 
+<<<<<<< HEAD
+>>>>>>> 93d568eb09bd0f5cb15041fc1284aba5e17bf909
+=======
 >>>>>>> 93d568eb09bd0f5cb15041fc1284aba5e17bf909
     state = {
         searchResults: [],
@@ -23,7 +29,11 @@ class Search extends Component{
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     handleSearch = async () => {
+=======
+    handleSearch = () => {
+>>>>>>> 93d568eb09bd0f5cb15041fc1284aba5e17bf909
 =======
     handleSearch = () => {
 >>>>>>> 93d568eb09bd0f5cb15041fc1284aba5e17bf909
@@ -31,6 +41,7 @@ class Search extends Component{
         const {API_URL, API_KEY} = Settings;
         const url = `${API_URL}/search/movie?api_key=${API_KEY}&query=${this.state.searchTerm}`
         
+<<<<<<< HEAD
 <<<<<<< HEAD
         const saveMovies = (response)=> {
             this.setState({
@@ -41,11 +52,16 @@ class Search extends Component{
         const logError = (error) => console.log(error)
         axios.get(url).then(saveMovies).catch(logError)
 =======
+=======
+>>>>>>> 93d568eb09bd0f5cb15041fc1284aba5e17bf909
         axios.get(url).then((response)=> {
             this.setState({
                 searchResults: response.data.results
             })
         })
+<<<<<<< HEAD
+>>>>>>> 93d568eb09bd0f5cb15041fc1284aba5e17bf909
+=======
 >>>>>>> 93d568eb09bd0f5cb15041fc1284aba5e17bf909
     }
 
@@ -64,6 +80,7 @@ class Search extends Component{
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     handleKeyPress = (event) => {
         console.log(
             `KeyCode: ${event.charCode} | Key: ${event.key} ( Alt: ${event.altKey}, Ctrl: ${event.ctrlKey})`,
@@ -75,11 +92,14 @@ class Search extends Component{
 
 =======
 >>>>>>> 93d568eb09bd0f5cb15041fc1284aba5e17bf909
+=======
+>>>>>>> 93d568eb09bd0f5cb15041fc1284aba5e17bf909
     render() {
         return  (
         <React.Fragment>
             <Container className={styles.container}>
             <TextField 
+<<<<<<< HEAD
 <<<<<<< HEAD
                 placeholer = "Type the name of a movie..." 
                 label = "Search" 
@@ -104,6 +124,8 @@ class Search extends Component{
                     onAdd={this.handleAdd} 
                 />
 =======
+=======
+>>>>>>> 93d568eb09bd0f5cb15041fc1284aba5e17bf909
                 placeholer="Type the name of a movie..." 
                 label="Search" 
                 variant="outlined" 
@@ -122,6 +144,9 @@ class Search extends Component{
             </Container>
             {this.state.searchResults.length > 0 && (<Container         className={styles.results}>
             <ResultsList movies={this.state.searchResults} onAdd={this.handleAdd} />
+<<<<<<< HEAD
+>>>>>>> 93d568eb09bd0f5cb15041fc1284aba5e17bf909
+=======
 >>>>>>> 93d568eb09bd0f5cb15041fc1284aba5e17bf909
             </Container>)}
         </React.Fragment>

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import React from "react";
 import {
   AppBar,
@@ -10,6 +11,8 @@ import {
 import SettingsIcon from "@material-ui/icons/Settings";
 import { Link } from "react-router-dom";
 =======
+=======
+>>>>>>> 93d568eb09bd0f5cb15041fc1284aba5e17bf909
 /* eslint-disable jsx-a11y/accessible-emoji */
 import React from 'react';
 import {AppBar, Toolbar,IconButton, Typography, Button  } from '@material-ui/core'
@@ -18,9 +21,12 @@ import {AppBar, Toolbar,IconButton, Typography, Button  } from '@material-ui/cor
 import MenuIcon from "@material-ui/icons/Menu";
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 const Header = (props) => {
   return (
 =======
+=======
+>>>>>>> 93d568eb09bd0f5cb15041fc1284aba5e17bf909
 const Header  = (props) => {
     return (
 >>>>>>> 93d568eb09bd0f5cb15041fc1284aba5e17bf909
@@ -47,6 +53,7 @@ const Header  = (props) => {
               </Link>
             </IconButton>
 <<<<<<< HEAD
+<<<<<<< HEAD
             <Button onClick={props.onLogout} color="inherit">
               Logout
             </Button>
@@ -54,6 +61,8 @@ const Header  = (props) => {
         )}
       </Toolbar>
 =======
+=======
+>>>>>>> 93d568eb09bd0f5cb15041fc1284aba5e17bf909
             <Typography
             style = {{flexGrow : 1,}}
              variant="h6">
